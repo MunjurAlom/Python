@@ -1,14 +1,14 @@
 #import opencv
 import cv2
 
-#load image
-image = cv2.imread('image.jpg')
+#load imagess
+img = cv2.imread('image.jpg')
 #show image
-cv2.imshow('Original',image)
+cv2.imshow('Original',img)
 cv2.waitKey()
 
 #convert grayscale
-gray_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #save to new file
 cv2.imwrite('newImage.png', gray_img)
